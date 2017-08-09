@@ -1,0 +1,729 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+body
+{
+	background:#DBDBDB;
+	margin:auto;
+	width: 1000px;
+	height: 800px;
+}
+#header
+{
+	height: 150px;
+	width: 100%;
+	margin: auto;
+	background-color: #223D62;
+}
+.min_bar
+{
+	height: 4px;
+	width: 100%;
+	margin: auto;
+	background-color: #76BA41;
+}
+.main_warper
+{
+	/*width: 1000px;*/
+	height: 400px;
+	margin: auto;
+	
+}
+#warper
+{
+	width: 1000px;
+	margin: auto;
+}
+#slider
+{
+	width:1000px;
+	height: 400px;
+	overflow: hidden;
+	margin: auto;
+	background: #FFF;
+	
+}
+.slideimg , img
+{
+	width: 1000px;
+	height: 400px;
+	
+
+}
+#next, #previous
+{
+ background:#333;
+ color: white;
+ width: 35px;
+ height: 35px;
+ border: 1px solid white;
+ text-align: center;
+ line-height: 35px;
+ border-radius: 25px;
+ opacity: 0.7;
+ font-style: bold;
+ z-index: 10;
+ cursor: pointer;
+position: absolute;
+}
+#next
+{
+
+right: 460px;
+top: 390px;	   
+	
+}
+#previous
+{
+ 
+ left: 460px;
+ top: 390px;
+}
+
+#navbar
+{
+	width: 1000px;
+	height: 47px;
+	background:#FA832A;
+	/*position: relative;*/
+	margin: auto;
+	float: left;
+	width: 100%;
+}
+
+
+
+
+#menu{
+	float: left;
+}
+
+/*
+#menu
+{
+	padding: 0px;
+	line-height: 40px;
+	margin-top:5px; 
+    float: left;
+
+}
+#menu li
+{
+	list-style-type: none;
+	display: inline;
+
+}
+
+#menu a
+{
+	text-decoration: none;
+	margin:20px 20px  0px;
+	color: white;
+	font-size: 13px;
+	padding: 5px 5px;
+	text-align: center;
+	position:relative;
+	height: 45px;
+}
+#menu a:hover
+{
+	background: #111;
+
+}*/
+#form
+{
+	line-height: 47px;
+	padding-left: 135px;
+	padding-bottom: 20px;
+	float: right;
+	margin-right: 30px;
+
+}
+#search{
+	padding: 5px;
+	/*height: 40px;*/
+	border-radius: 4px;
+	border:none;
+
+}
+#search_bt{
+	padding: 5px;
+	/*height: 40px;*/
+	border-radius: 4px;
+	border:none;
+}
+
+#search_bt:hover{
+	background: green;
+}
+#form input
+{
+	/*border:0px solid #111;
+	height: 24px;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: #111;
+	color: #FFF;*/
+}
+#form input[type=submit]
+{
+	/*background: #111;
+	color: #FFF;
+	height: 20px;*/
+}
+.footer
+{
+ width: 1000px;
+ height: auto;
+ color: white;
+ clear: both;
+ border-top: 10px solid green;
+ background: #181D20;
+}
+
+/*dropdown menu css.....*/
+#menu ul {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+    background: #FA832A;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #100F15;
+}
+
+#menu li.dropdown {
+    display: inline-block;
+}
+#menu li a:hover:not(.active) {
+    /*background-color: #100F15;*/
+    background: white;
+    color: #FA832A;
+}
+#menu li a.active {
+    
+    background-color: #6E676F;
+}
+
+#menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+#menu .dropdown-content a:hover 
+{
+	background-color: #f1f1f1;
+	color: white;
+}
+
+#menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.content-warper
+{
+	width: 100%;
+	background:#f3f3f3;
+	float: left;
+	margin-top:10px;
+}
+.main_warper{
+	float: left;
+}
+.sidebar
+{
+	height: 800px;
+	width: 110px;
+	background: #FA832A;
+	float: left;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+
+.main_panel
+{
+	/*width: 50%;*/
+	height: 800px;
+	overflow: auto;
+	
+}
+.content_box{
+	float: left;
+	background: white;
+	border: 1px solid gray;
+	margin-right: 5px;
+	margin-top: 5px;
+	position: relative;
+}
+.img_box img{
+	max-width: 192px;
+	height: auto;
+
+	padding: 5px;
+}
+
+.data_box{
+	width: 100%;
+	display: block;
+}
+.data_box span{
+	display: block;
+	padding: 3px;
+	text-align: center;
+
+	border-bottom: 1px solid gray;
+	position: relative;
+}
+.add{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: transparent;
+	/*opacity: 0.3;*/
+	display: none;
+}
+
+.add button{
+	margin-top: 75%;
+	z-index: 10;
+	position: sticky;
+
+}	
+
+.content_box:hover .add{
+	display: block;
+}
+
+.sidebar{
+padding: 1%;
+}
+.sidebar ul{
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+
+.sidebar ul li{
+	width: 100%;
+	/*background: green;*/
+}
+.sidebar a{
+	text-align: center;
+	display: block;
+	padding: 2px;
+	background: white;
+	margin-bottom: 3px;
+	color: #d9d9d9;
+	text-decoration: none;
+	color: #FA832A;
+}
+
+.sidebar a:hover{
+	background: #FA832A;
+	color: white;
+	border:1px solid white;
+
+}
+
+
+/*  Edit start*/
+
+
+
+
+.update select, .update input{
+	padding: 10px;
+}
+
+.logo{
+	float: left;
+	width: 140px;
+	margin-top: 55px;
+	height: auto;
+	font-size: 35px;
+	color: white;
+	margin-left: 10px;
+}
+.logo span{
+	border:5px solid white;
+	padding: 3px;
+	border-radius: 4px;
+}
+.cart_panel{
+	margin-right: 10px;
+	float: right;
+	width: 140px;
+	
+	margin-top: 65px;
+	height: auto;
+}
+
+.quantity{
+	/*height: 50px;
+	float: left;
+	border-radius: 500px;
+	background: red;
+	width: 50px;
+	position: relative;*/
+	margin-top: 2.5px;
+	float: left;
+	/*display: none;*/
+}
+.quantity span{
+	/*margin-top: 13px;
+	margin-left: 11px;
+	height: 100%;
+	position: absolute;*/
+
+	padding: 10px;
+	background: white;
+	border-radius: 500px;
+	border:3px solid red;
+}
+
+.check_out{
+	background: white;
+	margin-left: 15px;
+	padding-left: 30px;
+	border:3px solid red;
+}
+.cart_item{
+	height: 800px;
+	width: 40%;
+	float: left;
+	overflow-y: scroll;
+}
+
+.cart_item_box{
+	background: #b3b3b3;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+.cart_item_box td a{
+	float: right;
+	padding-right: 10px;
+	color: darkred;
+}
+.cart_item_boxm_img{
+	float: left;
+}
+.cart_item_img{
+	float: left;
+	/*height: 100%;*/
+}
+.cart_item img{
+	width: 95px;
+	height: auto;
+	padding: 5px;
+
+}
+
+.cart_item_data{
+	float: left;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	vertical-align: middle;
+	padding: 5px;
+	margin-top: 5%;	
+
+}
+.cart_item_data span{
+	vertical-align: middle;
+	
+	float: left;
+	/*padding: 5px;*/
+	padding: 10px;
+	margin-left: 5px;
+	max-width: 90px;
+	/*background: red;*/
+}
+
+.calculation{
+	float: left;
+	width: 45.5%;
+	margin-left: 5px;
+}
+
+.calculation td{
+	border-bottom: 1px solid gray;
+	padding: 10px;
+}
+
+.calculation td.total_cost{
+	border-bottom:none;
+	padding: 10px;
+}
+
+.calculation td.last_cost{
+	border-bottom:3px solid green	;
+	padding: 10px;
+}
+.order{
+	width: 100%;
+	float: left;
+}
+.order a{
+	float: left;
+	padding: 10px;
+	background: green;
+	color: white;
+	text-decoration: none;;
+	width: 44.5%;
+	text-align: center;
+}
+
+.order a:last-child{
+	margin-left: 9px;
+}
+
+.order a:hover{
+	background: #404040;
+	color: green;
+}
+
+.admin_sidebar
+{
+	height: 800px;
+	width: 400px;
+	background:gray;
+	float: left;
+	padding: 5px;
+	margin-right: 10px;
+}
+.every_order{
+	padding: 5px;
+	background: white;
+	color: black;
+	float: left;
+	margin-bottom: 5px;
+}
+.clint_info{
+	width: 250px;
+	float: left;
+	padding-right: 10px;
+	border-right: 5px solid green;
+}
+
+.clint_info span{
+	border-bottom: 1px solid gray;
+}
+.order_status{
+	/*vertical-align: middle;*/
+	float: left;
+	width: 120px;
+	padding-left: 5px;
+}
+
+.order_status select{
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.contact_panel{
+	width: 50%;
+	background: gray;
+	padding: 10%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.contact_panel input, .contact_panel textarea{
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	border:none;
+	margin-bottom: 3px;
+}
+.contact_panel input.subject{
+	width: 96%;
+}
+
+.contact_panel textarea.massage{
+	height: 100px;
+	width: 96%;
+}
+
+.contact_panel input.user_name, .contact_panel input.user_contact{
+	width: 45.6%;
+}
+
+.contact_panel input.submit{
+	margin-top: 10px;
+	background: green;
+}
+
+
+.sidebar span{
+	background: white;
+	text-align: center;
+	float: left;
+	width: 90%;
+	margin-bottom: 10px;
+	padding: 5%;
+	color: #FA832A;
+}
+
+#search{
+	padding-left: 10px;
+}
+
+.copyright{
+	/*background: red;*/
+	margin: auto;
+	width: 20%;
+	margin-bottom: 15px;
+	/*min-width: 240px;*/
+	border-radius: 3px;
+	padding: 2px;
+}
+.site_map{
+	width: 100%;
+	float: left;
+}
+.site_map ul{
+	text-align: center;
+	width: 60%;
+	margin:auto;
+
+}
+.site_map li div a{
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+}
+.site_map li.parent_li{
+	width: 23.33%;
+	float: left;
+	list-style-type: none;
+	
+}
+
+.site_map li.parent_li a.parent_a{
+	font-size: 20px;
+
+	color: white;	
+}
+
+.log_form{
+	width: 50%;
+	margin: auto;
+}
+
+.user_data{
+	width: 35%;
+	margin: auto;
+	padding: 15px;
+}
+
+.user_data input{
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.user_data select{
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.user_data input.submit{
+	width: 101%;
+	font-weight: bold;
+
+	background: green;
+	color: white;
+}
+
+.select_option{
+	margin: auto;
+	width: 50%;
+	margin-top:40px; 
+}
+.select_option a{
+	padding: 10px;
+	background: green;
+	color: white;
+	text-decoration: none;
+}	
+
+.select_option a:hover{
+	background: gray;
+}
+
+.update{
+	
+	margin: auto;
+	width: 90%;
+	margin-top: 50px;
+}
+
+table{
+border-collapse: collapse;
+background: #fff;
+}
+
+table, th ,td{
+	border: 1px solid #aaa;
+}
+
+th, td{
+	padding: 5px;
+}
